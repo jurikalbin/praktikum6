@@ -10,7 +10,7 @@
 	<script>
 	$(document).ready(function(){
 		$("li").first().addClass("active");
-		$("#next").click(function(){
+			$("#next").click(function(){
             if($("li.active").is(":last-child")){
                 $("li").first().addClass("active");
                 $("li").last().removeClass("active");
@@ -19,8 +19,7 @@
                 $("li.active").prev().removeClass("active");
             }
         });
-        $("#prev").click(function(){
-            console.log("Pushed Prev");
+    	    $("#prev").click(function(){
             if($("li.active").is(":first-child")){
                 $("li").last().addClass("active");
                 $("li").first().removeClass("active");
